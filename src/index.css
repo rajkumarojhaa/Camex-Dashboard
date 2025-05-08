@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+} */
+/* .app-container {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1920px; 
+  padding: 0px; 
+} */
+
+/* Hide scrollbar for all browsers */
+::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in Chrome, Safari, and Edge */
+  }
+  
+  html, body {
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer */
+    overflow-y: scroll; /* Ensures scrolling still works */
+  }
+
+  @layer base {
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f4f5;
+
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  
+  
+ 
+  
+
