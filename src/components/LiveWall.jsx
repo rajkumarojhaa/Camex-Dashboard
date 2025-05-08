@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import {
-  ChevronsRight,
-  X,
-  Plus,
- 
-} from "lucide-react";
+import { ChevronsRight, X, Plus } from "lucide-react";
 import CameraStream from "./CameraStream";
 
 const BASE_URL = import.meta.env.VITE_BASE_URL;
@@ -104,12 +99,18 @@ export default function FileExplorer({ userId = 42 }) {
                 </div>
                 <div className="grid grid-cols-1 pt-5  gap-4">
                   {group.cameras.map((cam) => (
-                    <div key={cam.id} className="bg-white overflow-hidden cursor-pointer text-sm flex items-center gap-2">
-                    {/* Image before the camera name */}
-                    <img src="/icons/darkcam.svg" alt="Camera" className="w-5 h-5" />
-                    {cam.camera_name}
-                  </div>
-                  
+                    <div
+                      key={cam.id}
+                      className="bg-white overflow-hidden cursor-pointer text-sm flex items-center gap-2"
+                    >
+                      {/* Image before the camera name */}
+                      <img
+                        src="/icons/darkcam.svg"
+                        alt="Camera"
+                        className="w-5 h-5"
+                      />
+                      {cam.camera_name}
+                    </div>
                   ))}
                 </div>
               </div>
